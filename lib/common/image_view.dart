@@ -25,6 +25,7 @@ class ImageView extends StatelessWidget {
       ),
       body: Center(
         child: Hero(
+          transitionOnUserGestures: true,
           tag: image['small']!,
           child: FutureBuilder<void>(
             future: precacheImage(NetworkImage(image['regular']!), context),

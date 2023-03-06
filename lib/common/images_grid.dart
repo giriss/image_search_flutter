@@ -14,6 +14,7 @@ class ImagesGrid extends StatelessWidget {
         final image = images[index];
 
         return Hero(
+          transitionOnUserGestures: true,
           tag: image['small']!,
           child: Material(
             child: Ink.image(
